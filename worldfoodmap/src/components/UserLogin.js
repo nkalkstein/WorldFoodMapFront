@@ -14,7 +14,7 @@ export default class UserLogin extends Component {
 
   handleSubmit(event) {
     event.preventDefault()
-    this.props.onSubmit(this.state.rname, this.state.password,)
+    this.props.onSubmit(this.state.name, this.state.password)
   }
 
   render() {
@@ -22,9 +22,9 @@ export default class UserLogin extends Component {
       <form onSubmit={(event) => this.handleSubmit(event)}>
         <input
           type='text'
-          name='username'
-          value={this.state.username}
-          placeholder='Username'
+          name='name'
+          value={this.state.name}
+          placeholder='Name'
           onChange={(event) => this.handleChange(event)}
         />
         <input

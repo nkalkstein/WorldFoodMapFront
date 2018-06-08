@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 export default class UserRegistration extends Component {
   state = {
     name: '',
-    email: '',
     password: ''
   }
 
@@ -29,7 +28,7 @@ export default class UserRegistration extends Component {
     //     )
     // } else {
     return (
-   
+
       <form onSubmit={(event) => this.handleSubmit(event)}>
         <input
           type='text'

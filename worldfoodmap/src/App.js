@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import Map from './Map'
-import UserRegistration from './UserRegistration'
+import Map from './components/Map'
+import UserRegistration from './components/UserRegistration'
 
 
 class App extends Component {
 
+state = {
+    user: ""
+  }
 
 
   // login = (name, password) => {
@@ -17,30 +20,12 @@ class App extends Component {
   //     },
   //     body: JSON.stringify({ name, password })
   //   })
-
-  login = (username, password, callback) => {
-    fetch('http://localhost:3000/api/v1/donor_sessions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({ username, password })
-    })
-    .then(res => res.json())
-    .then(json => {
-      localStorage.setItem('token', json.token)
-      localStorage.setItem('username', json.username)
-      localStorage.setItem('user_id', json.user_id)
-      localStorage.setItem('user_class', json.user_class)
-    })
-
-    callback("/")
-  }
+ 
 
 
 
-  register = (name, email, password) => {
+
+  register = (name, password) => {
     console.log("clicked")
     fetch('http://localhost:3000/users', {
       method: 'POST',
@@ -48,19 +33,28 @@ class App extends Component {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify({name, email, password })
+      body: JSON.stringify({name, password})
+    }).then (res => res.json()).then(res => {
+      this.setState({
+        user: res
+      })
     })
 }
 
 
   render() {
     return (
+
       <div className="App">
         <header className="App-header">
           <img src="http://www.clker.com/cliparts/Y/Y/I/0/D/0/planet-earth-md.png" className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to The World Food Map</h1>
+          <h4> **Explore International Cuisine**</h4>
         </header>
-        <UserRegistration register={this.register} login={this.login}/>
+        {this.state.user ? <Map/ > :
+
+        <UserRegistration  register={this.register} />
+      }
       </div>
     );
   }
