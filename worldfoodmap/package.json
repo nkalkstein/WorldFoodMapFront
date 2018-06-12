@@ -6,10 +6,16 @@
     "d3": "^5.4.0",
     "google-map-react": "^1.0.3",
     "react": "^16.4.0",
+    "react-addons": "^0.9.1-deprecated",
     "react-dom": "^16.4.0",
     "react-map-gl": "^3.2.8",
+    "react-pure-render": "^1.0.2",
     "react-scripts": "1.1.4",
-    "react-simple-maps": "^0.12.1"
+    "react-simple-maps": "^0.12.1",
+    "topojson": "^3.0.2",
+    "youtube-api-search": "0.0.5",
+    "youtube-api-v3-search": "^1.0.2",
+    "youtube-search-api-with-axios": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

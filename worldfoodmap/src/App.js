@@ -2,13 +2,17 @@ import React, { Component } from 'react';
 import './App.css';
 import Map from './components/Map'
 import UserRegistration from './components/UserRegistration'
+import Videos from './components/Videos'
+import NewMap from './components/NewMap'
+import ZoomPan from './components/ZoomPan'
+import Video from './components/Video'
 
 
 class App extends Component {
 
 state = {
     user: ""
-  }
+    }
 
 
   // login = (name, password) => {
@@ -51,10 +55,10 @@ state = {
           <h1 className="App-title">Welcome to The World Food Map</h1>
           <h4> **Explore International Cuisine**</h4>
         </header>
-        {this.state.user ? <Map/ > :
-
-        <UserRegistration  register={this.register} />
-      }
+      <div>
+        <UserRegistration user={this.state.user} register={this.register}/>
+      </div>
+  
       </div>
     );
   }

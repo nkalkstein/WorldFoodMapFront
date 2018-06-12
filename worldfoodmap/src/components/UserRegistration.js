@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ZoomPan from '../components/ZoomPan'
 
 export default class UserRegistration extends Component {
   
@@ -23,7 +24,7 @@ export default class UserRegistration extends Component {
   }
 
   render() {
-    
+    if (!this.props.user) {
     return (
 
       <h2>
@@ -50,6 +51,11 @@ export default class UserRegistration extends Component {
       </form>
       </h2>
     )
+  } else {
+    return(
+      <ZoomPan />
+      )
+  }
    }
   
 }
