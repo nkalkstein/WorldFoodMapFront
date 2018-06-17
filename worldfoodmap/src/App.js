@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Map from './components/Map'
-import UserRegistration from './components/UserRegistration'
+import GMap from './components/GMap'
+import MainPage from './components/MainPage'
 import Videos from './components/Videos'
-import NewMap from './components/NewMap'
-import ZoomPan from './components/ZoomPan'
-import Video from './components/Video'
+import Map from './components/Map'
+
 
 
 class App extends Component {
@@ -46,6 +45,9 @@ state = {
 }
 
 
+
+
+
   render() {
     return (
 
@@ -53,10 +55,12 @@ state = {
         <header className="App-header">
           <img src="http://www.clker.com/cliparts/Y/Y/I/0/D/0/planet-earth-md.png" className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to The World Food Map</h1>
-          <h4> **Explore International Cuisine**</h4>
+          <h3> **Explore International Cuisine**</h3>
         </header>
       <div>
-        <UserRegistration user={this.state.user} register={this.register}/>
+       
+        <MainPage user={this.state.user} register={this.register}/>
+        
       </div>
   
       </div>

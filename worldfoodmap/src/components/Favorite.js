@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import Videos from './Videos'
-import VideoDetail from './VideoDetail'
+import MainPage from './MainPage'
+import FavoriteDetail from './FavoriteDetail'
 
 
 
-const Video = ({video, onVideoSelect}) => {
+const Favorite = ({video, chosenVideo, onVideoSelect, goBack}) => {
 	const imageUrl = video.snippet.thumbnails.medium.url;
 
 
 
 
 return(
+	<div>
 	<li onClick={() => onVideoSelect(video)} className="list-group-item">
 		<div className="video-list media">
 			<div className="media-left">
@@ -21,7 +23,7 @@ return(
 			</div>
 		</div>
 	</li>
-
+	</div>
 
 
 	)
@@ -30,5 +32,4 @@ return(
 
 
 
-export default Video
-
+export default Favorite
