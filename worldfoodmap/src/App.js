@@ -4,6 +4,8 @@ import GMap from './components/GMap'
 import MainPage from './components/MainPage'
 import Videos from './components/Videos'
 import Map from './components/Map'
+import foodBackground from "./static/food-background-2763.jpg"
+import GMapTwo from './components/GMapTwo'
 
 
 
@@ -29,7 +31,6 @@ state = {
 
 
   register = (name, password) => {
-    console.log("clicked")
     fetch('http://localhost:3000/users', {
       method: 'POST',
       headers: {
@@ -49,22 +50,40 @@ state = {
 
 
   render() {
+    if (!this.state.user) {
     return (
-
-      <div className="App">
+      <div className="AppOne">
         <header className="App-header">
           <img src="http://www.clker.com/cliparts/Y/Y/I/0/D/0/planet-earth-md.png" className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to The World Food Map</h1>
-          <h3> **Explore International Cuisine**</h3>
+          <h3 > Explore International Cuisine </h3>
+        </header>
+      <div >
+        <MainPage user={this.state.user} register={this.register}/>
+        <GMapTwo />
+      </div>
+      
+      </div>
+
+
+    );
+  } else{
+    return (
+      <div className="App">
+        <header className="Appy">
+          <img src="http://www.clker.com/cliparts/Y/Y/I/0/D/0/planet-earth-md.png" className="App-logo" alt="logo" />
+          <h1>The World Food Map</h1>
         </header>
       <div>
-       
         <MainPage user={this.state.user} register={this.register}/>
-        
       </div>
   
       </div>
-    );
+      )
+
+
+  }
+
   }
 }
 

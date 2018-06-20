@@ -5,13 +5,14 @@ import FavoriteDetail from './FavoriteDetail'
 
 
 
-const Favorite = ({video, chosenVideo, onVideoSelect, goBack}) => {
+const Favorite = ({userName, video, chosenVideo, onVideoSelect, goBack}) => {
 	const imageUrl = video.snippet.thumbnails.medium.url;
 
 
 
 
 return(
+	
 	<div>
 	<li onClick={() => onVideoSelect(video)} className="list-group-item">
 		<div className="video-list media">
@@ -24,6 +25,7 @@ return(
 		</div>
 	</li>
 	</div>
+	
 
 
 	)

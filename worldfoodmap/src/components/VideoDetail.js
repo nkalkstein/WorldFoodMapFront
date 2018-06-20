@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const VideoDetail = ({addToFavorites, viewFavorites, video}) => {
+const VideoDetail = ({favoritesPressed, renderWiki, addToFavorites, viewFavorites, video}) => {
 	if (!video) {
 		return <div>  </div>
 	}
@@ -13,17 +13,24 @@ const VideoDetail = ({addToFavorites, viewFavorites, video}) => {
 
 
 
+
 	return (
+	<div>
+	<div>
+	</div>
 		<div className="video-detail col-md-8">
-			<div className="embed-responsive embed-responsive-16by9">
-				<iframe width="600" height="350" className="embed-responsive-item" src={url}></iframe>
+			
+			<div className="embed-responsive embed-responsive-16by9" style={{margin: "auto", width: "50%", padding: "10px", paddingTop: "20px"}}>
+				<iframe width="600" height="350" className="embed-responsive-item" src={url} allowFullScreen='true'></iframe>
 			</div>
+			
 			<div className="details">
-				<div style={{ margin: '0 auto'}}>{video.snippet.title}</div>
-				<button onClick={(e) => addToFavorites(e, video)} className="favoriteButton"> Add to Favorites </button>
+				<div style={{ margin: '0 auto', color: "white"}}>{video.snippet.title}</div>
+				<button onClick={(e) => addToFavorites(e, video)} className="favoriteButton"> Add Video to Favorites </button>
 				<br></br>
-				<button onClick={viewFavorites} > View My Favorites </button>
+				<button className="viewFavoritesButton" onClick={viewFavorites} > View My Favorites </button>
 			</div>
+		</div>
 		</div>
 
 

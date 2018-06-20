@@ -9,6 +9,7 @@ const Favorites = ({Favorites}) => {
 return (
 
             <div>
+            
 			<ul className="col-md-4 list-group">
 	            {Favorites.map((video) => <VideoDetail video={video} key={video.etag} />)}
 	        </ul>

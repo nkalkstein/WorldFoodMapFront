@@ -5,9 +5,9 @@ import Videos from './Videos'
 import Map from '../components/Map'
 
  
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComp = ({ text }) => <div>{text}</div>;
  
-class GMap extends Component {
+class GMapTwo extends Component {
 
   state = {
     chosenLocation: ''
@@ -25,32 +25,24 @@ class GMap extends Component {
 
 
 render() {
-  console.log(this.props.city )
- if (this.props.city) {
-  const correctCoordinates = [this.props.city.coordinates[1], this.props.city.coordinates[0]]
+
     return (
-    <div >
-    <div style={{ margin: '0 auto', height: '54.5vh', width: '50%', float: 'right', overflow: "hidden", }}>
+    <div style={{ height: '80vh', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyA-ojt-goMyfKA9QVd4TPmtYnGSzS3m7Es" }}
-          defaultCenter={correctCoordinates}
-          defaultZoom={5}
+          defaultCenter={this.state.center}
+          defaultZoom={this.state.zoom}
         >
 
         </GoogleMapReact>
       </div>
-      </div>
       
     );
-  } else {
-    return null
-  }
+  
 }
 
 
 
 }
  
-export default GMap;
-
-
+export default GMapTwo;

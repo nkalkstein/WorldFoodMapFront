@@ -16,20 +16,32 @@ export default class MainPage extends Component {
     name: '',
     password: '',
     favorites: [],
-    favoritesView: false
+    favoritesView: false,
+    city: null,
+    cityStats: null
   }
 
 
 
-onVideoSelect = selectedVideo => this.setState({selectedVideo})
+onVideoSelect = (selectedVideo) => {
+  this.setState({
+    selectedVideo: selectedVideo
+  })
+}
 
+removeVideos = () => {
+  this.setState({
+    videos: [],
+    selectedVideo: null
+  })
+}
 
 renderVideos = (city, country) => {
    const API_KEY = 'AIzaSyA-ojt-goMyfKA9QVd4TPmtYnGSzS3m7Es';
 
 
 
-     searchYouTube({key: API_KEY, term: `${city} ${country} food`, maxResults: 6}, (videos) => {
+     searchYouTube({key: API_KEY, term: `${city} ${country} food`, maxResults: 9}, (videos) => {
             this.setState({
               videos: videos,
               selectedVideo:  videos[0]
@@ -38,11 +50,24 @@ renderVideos = (city, country) => {
        }
 
 
+
+renderWiki = (city, country) => {
+  fetch("https://en.wikipedia.org/w/api.php?&origin=*&action=opensearch&search=" + city +"&limit=1")
+      .then(x => x.json()) 
+      .then((results) => {
+        this.setState({
+          cityStats: results
+        })
+      })
+  }
+
 addToFavorites = (event, video) => {
   console.log(event.target)
     this.setState({
-      favorites: [...this.state.favorites, video]
+      favorites: [...this.state.favorites, video],
+      favoritesPressed: true
     })
+    alert("This video has been added to your favorites!");
 }
 
 viewFavorites = (event) =>{
@@ -71,11 +96,22 @@ goBack = (event) => {
 
   }
 
+  setCity = (city) => {
+    this.setState({
+      city: city
+    })
+  }
+
+  resetCity = (city) => {
+    this.setState({
+      city:null
+    })
+  }
+
   render() {
     if (!this.props.user) {
     return (
-
-      <h2>
+      <h2 className="Login">
         Create an Account or Log In
       <form onSubmit={(event) => this.handleSubmit(event)}>
         <input
@@ -106,14 +142,15 @@ goBack = (event) => {
 
     return(
       <div>
-      <Map renderVideos={this.renderVideos} user={this.state.name}/>
+      <Map cityStats={this.state.cityStats} renderWiki={this.renderWiki} renderVideos={this.renderVideos} removeVideos={this.removeVideos} user={this.state.name} setCity={this.setCity} resetCity={this.resetCity}/>
       
       <div>
-      <VideoDetail addToFavorites={this.addToFavorites} video={this.state.selectedVideo} viewFavorites={this.viewFavorites} />
+      <VideoDetail favoritesPressed={this.state.favoritesPressed} addToFavorites={this.addToFavorites} video={this.state.selectedVideo} viewFavorites={this.viewFavorites} />
       <ul className="col-md-4 list-group">
               {theVideos.map((video) => <Video onVideoSelect={this.onVideoSelect} key={video.etag} video={video} />)}
           </ul>
       </div>
+
       </div>
       )
       } else {
@@ -123,9 +160,9 @@ goBack = (event) => {
 
 
          <div>
-         <FavoriteDetail video={this.state.favorites[0]} goBack={this.goBack} />
+         <FavoriteDetail userName={this.state.name} video={this.state.favorites[0]} goBack={this.goBack} />
            <ul className="col-md-4 list-group">
-              {theFavs.map((video) => <Favorite onVideoSelect={this.onVideoSelect} goBack={this.goBack} key={video.etag} video={video}/>)}
+              {theFavs.map((video) => <Favorite userName={this.state.name} onVideoSelect={this.onVideoSelect} goBack={this.goBack} key={video.etag} video={video}/>)}
           </ul>
       </div>
     

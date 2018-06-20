@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const FavoriteDetail = ({addToFavorites, viewFavorites, video, goBack}) => {
+const FavoriteDetail = ({userName, addToFavorites, viewFavorites, video, goBack}) => {
 	if (!video) {
 		return <div>  </div>
 	}
@@ -15,17 +15,18 @@ const FavoriteDetail = ({addToFavorites, viewFavorites, video, goBack}) => {
 
 	return (
 		<div>
+		<h2 style={{color: "white"}}> {userName}'s Favorite Videos </h2>
+		<button className="goBack" onClick={goBack}> GO BACK </button>
 		<div className="video-detail col-md-8">
 			
 			<div className="embed-responsive embed-responsive-16by9">
 				<iframe width="600" height="350" className="embed-responsive-item" src={url}></iframe>
 			</div>
 			<div className="details">
-				<div style={{ margin: '0 auto'}}>{video.snippet.title}</div>
+				<h1 style={{ margin: '0 auto', color: "white"}}>{video.snippet.title}</h1>
 			</div>
 		</div>
 		<div>
-		<button className="goBack" onClick={goBack}> GO BACK </button>
 		</div>
 		</div>
 

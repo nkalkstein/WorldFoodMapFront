@@ -42,11 +42,15 @@ render() {
 
 			<div>
 			<VideoDetail video={this.state.selectedVideo} />
-			<ul className="col-md-4 list-group">
+			<div className="row">
 	            {theVideos.map((video) => <Video onVideoSelect={this.onVideoSelect} key={video.etag} video={video} />)}
-	        </ul>
+	        </div>
 	        </div>
       )
+
+
+
+
        } else {
      return null
    }

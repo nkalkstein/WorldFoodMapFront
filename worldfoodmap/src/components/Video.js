@@ -11,16 +11,17 @@ const Video = ({video, onVideoSelect}) => {
 
 
 return(
-	<li onClick={() => onVideoSelect(video)} className="list-group-item">
-		<div className="video-list media">
-			<div className="media-left">
-				<img className="media-object" src={imageUrl} />
+	<div onClick={() => onVideoSelect(video)}>
+		<div>
+			<div style={{float: "left", width: "24%", marginRight: "1%", marginBottom: "0.5em"}}>
+				<img  src={imageUrl} />
+				<h4>{video.snippet.title}</h4>
 			</div>
-			<div className="media-body">
-				<div className="media-heading">{video.snippet.title}</div>
+			<div>
+				
 			</div>
 		</div>
-	</li>
+	</div>
 
 
 
