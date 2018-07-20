@@ -14,6 +14,12 @@ This app is something that I would use if someone else made it, so I decided to 
 
 # Screenshots
 
+![](https://github.com/nkalkstein/WorldFoodMapFront/blob/master/Screen%20Shot%202018-07-19%20at%2010.19.20%20PM.png)
+
+![](https://github.com/nkalkstein/WorldFoodMapFront/blob/master/Screen%20Shot%202018-07-19%20at%2010.20.41%20PM.png)
+
+![](https://github.com/nkalkstein/WorldFoodMapFront/blob/master/Screen%20Shot%202018-07-19%20at%2010.21.35%20PM.png)
+
 # Demo Video
 
 [Watch Here](https://youtu.be/5X7sW8_q3lA)
