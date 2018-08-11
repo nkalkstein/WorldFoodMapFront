@@ -41,13 +41,25 @@ button:hover {
 }
 
 .App {
-    background: url("./static/food-background-2763.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
+  background: url("./static/food-background-2763.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
  font-family: 'Inconsolata', monospace;
 }
+
+.App{
+ z-index: 9999;
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ top: 0;
+ left: 0; 
+ overflow: auto;
+}
+
+
 
 .Appy {
   text-align: center;

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import '../App.css';
 import GoogleMapReact from 'google-map-react';
-import Videos from './Videos'
-import Map from '../components/Map'
+
 
  
-const AnyReactComp = ({ text }) => <div>{text}</div>;
+
  
 class GMapTwo extends Component {
 

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import GMap from './components/GMap'
 import MainPage from './components/MainPage'
-import Videos from './components/Videos'
-import Map from './components/Map'
-import foodBackground from "./static/food-background-2763.jpg"
 import GMapTwo from './components/GMapTwo'
 
 

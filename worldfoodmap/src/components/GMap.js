@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import '../App.css';
 import GoogleMapReact from 'google-map-react';
-import Videos from './Videos'
-import Map from '../components/Map'
+
 
  
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
  
 class GMap extends Component {
 
@@ -30,7 +29,7 @@ render() {
   const correctCoordinates = [this.props.city.coordinates[1], this.props.city.coordinates[0]]
     return (
     <div >
-    <div style={{ margin: '0 auto', height: '54.5vh', width: '50%', float: 'right', overflow: "hidden", }}>
+    <div style={{ margin: '0 auto', height: '48.5vh', width: '50%', float: 'right', overflow: "hidden", }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyA-ojt-goMyfKA9QVd4TPmtYnGSzS3m7Es" }}
           defaultCenter={correctCoordinates}

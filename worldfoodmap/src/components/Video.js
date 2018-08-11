@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import Videos from './Videos'
-import VideoDetail from './VideoDetail'
+import React from 'react';
+
 
 
 
@@ -13,8 +12,8 @@ const Video = ({video, onVideoSelect}) => {
 return(
 	<div onClick={() => onVideoSelect(video)}>
 		<div>
-			<div style={{float: "left", width: "24%", marginRight: "1%", marginBottom: "0.5em"}}>
-				<img  src={imageUrl} />
+			<div style={{float: "left", width: "24%", marginRight: "1%", marginBottom: "0.5em", color: "white"}}>
+				<img  alt="alt" src={imageUrl} />
 				<h4>{video.snippet.title}</h4>
 			</div>
 			<div>

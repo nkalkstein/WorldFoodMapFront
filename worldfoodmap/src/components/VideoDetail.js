@@ -21,7 +21,7 @@ const VideoDetail = ({favoritesPressed, renderWiki, addToFavorites, viewFavorite
 		<div className="video-detail col-md-8">
 			
 			<div className="embed-responsive embed-responsive-16by9" style={{margin: "auto", width: "50%", padding: "10px", paddingTop: "20px"}}>
-				<iframe width="600" height="350" className="embed-responsive-item" src={url} allowFullScreen='true'></iframe>
+				<iframe width="600" height="350" className="embed-responsive-item" title="title" src={url} allowFullScreen='true'></iframe>
 			</div>
 			
 			<div className="details">

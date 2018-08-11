@@ -1,6 +1,6 @@
-import React, { Component } from "react"
+import React from "react"
 import Autosuggest from 'react-autosuggest';
-import Map from './Map'
+
 
 // Imagine you have a list of languages that you'd like to autosuggest.
 const cities = [

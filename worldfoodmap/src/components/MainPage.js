@@ -3,7 +3,6 @@ import Map from '../components/Map'
 import searchYouTube from 'youtube-api-search';
 import Video from './Video'
 import VideoDetail from './VideoDetail'
-import GMap from './GMap'
 import Favorite from './Favorite'
 import FavoriteDetail from './FavoriteDetail'
 
@@ -16,6 +15,7 @@ export default class MainPage extends Component {
     name: '',
     password: '',
     favorites: [],
+    selectedFavorite: null,
     favoritesView: false,
     city: null,
     cityStats: null
@@ -28,6 +28,13 @@ onVideoSelect = (selectedVideo) => {
     selectedVideo: selectedVideo
   })
 }
+
+onFavoriteSelect = (selectedVideo) => {
+  this.setState({
+    selectedFavorite: selectedVideo
+  })
+}
+
 
 removeVideos = () => {
   this.setState({
@@ -72,13 +79,16 @@ addToFavorites = (event, video) => {
 
 viewFavorites = (event) =>{
   this.setState({
-    favoritesView: true
+    favoritesView: true,
+    selectedFavorite: this.state.favorites[0]
   })
 }
 
 goBack = (event) => {
   this.setState({
-    favoritesView: false
+    favoritesView: false,
+    videos: [],
+    selectedVideo: null
   })
 
 }
@@ -142,7 +152,7 @@ goBack = (event) => {
 
     return(
       <div>
-      <Map cityStats={this.state.cityStats} renderWiki={this.renderWiki} renderVideos={this.renderVideos} removeVideos={this.removeVideos} user={this.state.name} setCity={this.setCity} resetCity={this.resetCity}/>
+      <Map  cityStats={this.state.cityStats} renderWiki={this.renderWiki} renderVideos={this.renderVideos} removeVideos={this.removeVideos} user={this.state.name} setCity={this.setCity} resetCity={this.resetCity}/>
       
       <div>
       <VideoDetail favoritesPressed={this.state.favoritesPressed} addToFavorites={this.addToFavorites} video={this.state.selectedVideo} viewFavorites={this.viewFavorites} />
@@ -160,9 +170,9 @@ goBack = (event) => {
 
 
          <div>
-         <FavoriteDetail userName={this.state.name} video={this.state.favorites[0]} goBack={this.goBack} />
+         <FavoriteDetail userName={this.state.name} video={this.state.selectedFavorite} goBack={this.goBack} />
            <ul className="col-md-4 list-group">
-              {theFavs.map((video) => <Favorite userName={this.state.name} onVideoSelect={this.onVideoSelect} goBack={this.goBack} key={video.etag} video={video}/>)}
+              {theFavs.map((video) => <Favorite userName={this.state.name} onFavoriteSelect={this.onFavoriteSelect} goBack={this.goBack} key={video.etag} video={video}/>)}
           </ul>
       </div>
     

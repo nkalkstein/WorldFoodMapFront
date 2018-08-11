@@ -1,9 +1,7 @@
 import React, { Component } from "react"
 import geographyObject from "../static/world-50m.json"
-import Videos from './Videos'
 import GMap from './GMap'
 import NewSearchBar from './NewSearchBar'
-import MainPage from './MainPage'
 
 
 
@@ -19,15 +17,11 @@ import {
 
 const wrapperStyles = {
   width: "100%",
-  maxWidth: 980,
+  maxWidth: 1200,
   margin: "0 auto",
 }
 
-const otherStyles = {
-  width: "100%",
-  maxWidth: 500,
-  margin: "3",
-}
+
 
 class Map extends Component {
   constructor() {
@@ -90,7 +84,7 @@ class Map extends Component {
         { name: "Ashgabat", country:"Turkmenistan", coordinates: [58.22, 37.56] },
         { name: "Balikpapan", country:"Indonesia", coordinates: [116.50, -1.16] },
         { name: "Bangalore", country:"India", coordinates: [77.34, 12.58] },
-        { name: "Bangkok", country:"USA", coordinates: [100.28, 13.45] },
+        { name: "Bangkok", country:"Thailand", coordinates: [100.28, 13.45] },
         { name: "Beijing", country:"China", coordinates: [116.23, 39.55] },
         { name: "Beirut", country:"Lebanon", coordinates: [35.31, 33.53] },
         { name: "Bishkek", country:"Kyrgyzstan", coordinates: [74.37, 42.52] },
@@ -836,7 +830,6 @@ handleReset() {
                         stroke: "#607D8B",
                         strokeWidth: 0.75,
                         outline: "none",
-                        text: "{city.country}"
 
                       },
                       pressed: {
