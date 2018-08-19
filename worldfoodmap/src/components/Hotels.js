@@ -13,9 +13,7 @@ return(
 	<div onClick={() => Flight(time)}>
 		<div>
 			</div>
-			<div>
-				
-			</div>
+
 		</div>
 	</div>
 
