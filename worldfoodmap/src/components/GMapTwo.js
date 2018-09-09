@@ -21,6 +21,7 @@ class GMapTwo extends Component {
     zoom: 0
   };
 
+//Include "places" restaurants on second google map.   Includ hotel locations?
 
 
 render() {

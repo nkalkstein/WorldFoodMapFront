@@ -22,6 +22,7 @@ class GMap extends Component {
   };
 
 
+// Include locations on this map?  Or make a second google map?
 
 render() {
   console.log(this.props.city )
