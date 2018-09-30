@@ -2,19 +2,15 @@ import React, { Component } from 'react';
 import MainPage from './MainPage';
 
 
-Hotels Component:
+// Hotels Component:
 
-Use hotel metasearch site api.  Display real time results on video page?
-
-
+// Use hotel metasearch site api.  Display real time results on video page?
 
 
-import React, { Component } from 'react';
-import searchYouTube from 'youtube-api-search';
-import Video from './Video'
-import VideoDetail from './VideoDetail'
 
-class Videos extends Component{
+
+
+class Hotels extends Component{
 
 	state = {
 		videos: [],
@@ -32,14 +28,13 @@ onVideoSelect = selectedVideo => this.setState({selectedVideo})
 componentDidMount() {
 	const cityName = this.props.city.name
     const countryName = this.props.city.country
-	 const API_KEY = 'AIzaSyA-ojt-goMyfKA9QVd4TPmtYnGSzS3m7Es';
+	 const API_KEY = '';
 
 
 
-     searchYouTube({key: API_KEY, term: `${cityName} ${countryName} food`, maxResults: 6}, (videos) => {
+     searchHotels({key: API_KEY, term: `${cityName} ${countryName}`, maxResults: 6}, (hotels) => {
             this.setState({
-            	videos: videos,
-            	selectedVideo:  videos[0]
+            	hotels: hotels
             })
           })
        }
@@ -70,7 +65,6 @@ render() {
 	
 }
 
-export default Videos;
 
 
 
