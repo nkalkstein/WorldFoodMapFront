@@ -7,12 +7,7 @@ const Flight = ({time, date, airline, flightNumber}) => {
 
 
 
-import React, { Component } from 'react';
-import searchYouTube from 'youtube-api-search';
-import Video from './Video'
-import VideoDetail from './VideoDetail'
-
-class Videos extends Component{
+class Flight extends Component{
 
 	state = {
 		videos: [],
@@ -23,18 +18,15 @@ class Videos extends Component{
 
 
 
-onVideoSelect = selectedVideo => this.setState({selectedVideo})
-
-
 
 componentDidMount() {
 	const cityName = this.props.city.name
     const countryName = this.props.city.country
-	 const API_KEY = 'AIzaSyA-ojt-goMyfKA9QVd4TPmtYnGSzS3m7Es';
+	 const API_KEY = ''
 
 
 
-     searchYouTube({key: API_KEY, term: `${cityName} ${countryName} food`, maxResults: 6}, (videos) => {
+     renderFlights({key: API_KEY, term: `${cityName} ${countryName}`, maxResults: 6}, (flights) => {
             this.setState({
             	videos: videos,
             	selectedVideo:  videos[0]
@@ -68,7 +60,6 @@ render() {
 	
 }
 
-export default Videos;
 
 
 
