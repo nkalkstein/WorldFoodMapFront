@@ -28,8 +28,7 @@ componentDidMount() {
 
      renderFlights({key: API_KEY, term: `${cityName} ${countryName}`, maxResults: 6}, (flights) => {
             this.setState({
-            	videos: videos,
-            	selectedVideo:  videos[0]
+            	flights: flights
             })
           })
        }
