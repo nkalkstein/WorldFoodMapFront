@@ -35,28 +35,7 @@ componentDidMount() {
 
 
 
-render() {
-	   if (this.state.videos.length){
-	   	const theVideos = this.state.videos.slice(1)
-			return(
 
-			<div>
-			<VideoDetail video={this.state.selectedVideo} />
-			<div className="row">
-	            {theVideos.map((video) => <Video onVideoSelect={this.onVideoSelect} key={video.etag} video={video} />)}
-	        </div>
-	        </div>
-      )
-
-
-
-
-       } else {
-     return null
-   }
-  }
-     
-	
 }
 
 
