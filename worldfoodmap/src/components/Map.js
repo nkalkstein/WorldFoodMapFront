@@ -57,7 +57,7 @@ class Map extends Component {
         { name: "Minsk", country:"Belarus", coordinates: [27.34, 53.54] },
         { name: "Monaco", country:"Monaco", coordinates: [7.25, 43.44] },
         { name: "Moscow", country:"Russia", coordinates: [37.37, 55.45] },
-        { name: "Munich", country:"Germany", coordinates: [11.34, 48.08] },        
+        { name: "Munich", country:"Germany", coordinates: [11.34, 48.08] },
         { name: "Naples", country:"Italy", coordinates: [14.16, 40.51] },
         { name: "Oslo", country:"Norway", coordinates: [10.45, 59.57] },
         { name: "Paris", country:"France", coordinates: [2.21, 48.51] },
@@ -72,7 +72,7 @@ class Map extends Component {
         { name: "Stockholm", country:"Sweden", coordinates: [18.04, 59.20] },
         { name: "Skopje", country:"Macedonia", coordinates: [21.26, 42.00] },
         { name: "Tirana", country: "Albania", coordinates: [19.49, 41.20] },
-        { name: "Uppsala", country: "Sweden", coordinates: [17.39, 59.51] }, 
+        { name: "Uppsala", country: "Sweden", coordinates: [17.39, 59.51] },
         { name: "Venice", country:"Italy", coordinates: [12.20, 45.26] },
         { name: "Vienna", country:"Austria", coordinates: [16.22, 48.13] },
         { name: "Warsaw", country:"Poland", coordinates: [21.01, 52.14] },
@@ -96,7 +96,7 @@ class Map extends Component {
         { name: "Colombo", country:"Sri Lanka", coordinates: [79.51, 6.56] },
         { name: "Da Nang", country:"Vietnam", coordinates: [108.14, 16.04] },
         { name: "Davao City", country:"Philippines", coordinates: [125.36, 7.04] },
-        { name: "Dhaka", country:"Bangladesh", coordinates: [90.23, 23.42] }, 
+        { name: "Dhaka", country:"Bangladesh", coordinates: [90.23, 23.42] },
         { name: "Doha", country:"Qatar", coordinates: [51.32, 25.17] },
         { name: "Dubai", country:"United Arab Emirates", coordinates: [55.18, 25.15] },
         { name: "Dushanbe", country:"Tajikistan", coordinates: [68.47, 38.32] },
@@ -146,7 +146,7 @@ class Map extends Component {
         { name: "Tel Aviv", country: "Israel", coordinates: [34.47, 32.04] },
         { name: "Tianjin", country: "China", coordinates: [117.11, 39.08] },
         { name: "Tokyo", country: "Japan", coordinates: [139.42, 35.41] },
-        { name: "Ulaanbaatar", country: "Mongolia", coordinates: [106.55, 47.55] }, 
+        { name: "Ulaanbaatar", country: "Mongolia", coordinates: [106.55, 47.55] },
         { name: "Vientiane", country:"Laos", coordinates: [102.36, 17.58] },
         { name: "Xi'an", country:"China", coordinates: [108.54, 34.16] },
         { name: "Yakutsk", country:"Russia", coordinates: [129.44, 62.02] },
@@ -230,7 +230,7 @@ class Map extends Component {
         { name: "San Juan", country:"Puerto Rico", coordinates: [-66.04, 18.27] },
         { name: "Santa Fe", country:"USA", coordinates: [-105.58, 35.40] },
         { name: "Santo Domingo", country:"Dominican Republic", coordinates: [-69.57, 18.28] },
-        { name: "Seattle", country:"USA", coordinates: [-122.20, 47.37] }, 
+        { name: "Seattle", country:"USA", coordinates: [-122.20, 47.37] },
         { name: "St. Louis", country:"USA", coordinates: [-90.12, 38.38] },
         { name: "Tijuana", country: "Mexico", coordinates: [-117.02, 32.32] },
         { name: "Toronto", country: "Canada", coordinates: [-79.24, 43.42] },
@@ -280,7 +280,7 @@ class Map extends Component {
         { name: "Minsk", country:"Belarus", coordinates: [27.34, 53.54] },
         { name: "Monaco", country:"Monaco", coordinates: [7.25, 43.44] },
         { name: "Moscow", country:"Russia", coordinates: [37.37, 55.45] },
-        { name: "Munich", country:"Germany", coordinates: [11.34, 48.08] },        
+        { name: "Munich", country:"Germany", coordinates: [11.34, 48.08] },
         { name: "Naples", country:"Italy", coordinates: [14.16, 40.51] },
         { name: "Oslo", country:"Norway", coordinates: [10.45, 59.57] },
         { name: "Paris", country:"France", coordinates: [2.21, 48.51] },
@@ -295,7 +295,7 @@ class Map extends Component {
         { name: "Stockholm", country:"Sweden", coordinates: [18.04, 59.20] },
         { name: "Skopje", country:"Macedonia", coordinates: [21.26, 42.00] },
         { name: "Tirana", country: "Albania", coordinates: [19.49, 41.20] },
-        { name: "Uppsala", country: "Sweden", coordinates: [17.39, 59.51] }, 
+        { name: "Uppsala", country: "Sweden", coordinates: [17.39, 59.51] },
         { name: "Venice", country:"Italy", coordinates: [12.20, 45.26] },
         { name: "Vienna", country:"Austria", coordinates: [16.22, 48.13] },
         { name: "Warsaw", country:"Poland", coordinates: [21.01, 52.14] },
@@ -321,7 +321,7 @@ class Map extends Component {
         { name: "Colombo", country:"Sri Lanka", coordinates: [79.51, 6.56] },
         { name: "Da Nang", country:"Vietnam", coordinates: [108.14, 16.04] },
         { name: "Davao City", country:"Philippines", coordinates: [125.36, 7.04] },
-        { name: "Dhaka", country:"Bangladesh", coordinates: [90.23, 23.42] }, 
+        { name: "Dhaka", country:"Bangladesh", coordinates: [90.23, 23.42] },
         { name: "Doha", country:"Qatar", coordinates: [51.32, 25.17] },
         { name: "Dubai", country:"United Arab Emirates", coordinates: [55.18, 25.15] },
         { name: "Dushanbe", country:"Tajikistan", coordinates: [68.47, 38.32] },
@@ -371,7 +371,7 @@ class Map extends Component {
         { name: "Tel Aviv", country: "Israel", coordinates: [34.47, 32.04] },
         { name: "Tianjin", country: "China", coordinates: [117.11, 39.08] },
         { name: "Tokyo", country: "Japan", coordinates: [139.42, 35.41] },
-        { name: "Ulaanbaatar", country: "Mongolia", coordinates: [106.55, 47.55] }, 
+        { name: "Ulaanbaatar", country: "Mongolia", coordinates: [106.55, 47.55] },
         { name: "Vientiane", country:"Laos", coordinates: [102.36, 17.58] },
         { name: "Xi'an", country:"China", coordinates: [108.54, 34.16] },
         { name: "Yakutsk", country:"Russia", coordinates: [129.44, 62.02] },
@@ -402,7 +402,7 @@ class Map extends Component {
         { name: "Pretoria", country:"South Africa", coordinates: [28.11, -25.45] },
         { name: "Windhoek", country:"Namibia", coordinates: [17.05, -22.34] }
       ],
-      citiesOceania: [ 
+      citiesOceania: [
         { name: "Adelaide", country:"Australia", coordinates: [138.36, -34.56] },
         { name: "Auckland", country:"New Zealand", coordinates: [174.44, -36.50] },
         { name: "Brisbane", country:"Australia", coordinates: [153.02, -27.28] },
@@ -461,7 +461,7 @@ class Map extends Component {
         { name: "San Juan", country:"Puerto Rico", coordinates: [-66.04, 18.27] },
         { name: "Santa Fe", country:"USA", coordinates: [-105.58, 35.40] },
         { name: "Santo Domingo", country:"Dominican Republic", coordinates: [-69.57, 18.28] },
-        { name: "Seattle", country:"USA", coordinates: [-122.20, 47.37] }, 
+        { name: "Seattle", country:"USA", coordinates: [-122.20, 47.37] },
         { name: "St. Louis", country:"USA", coordinates: [-90.12, 38.38] },
         { name: "Tijuana", country: "Mexico", coordinates: [-117.02, 32.32] },
         { name: "Toronto", country: "Canada", coordinates: [-79.24, 43.42] },
@@ -487,8 +487,8 @@ class Map extends Component {
         { name: "São Paulo", country:"Brazil", coordinates: [-46.38, -23.33] }
       ]
     }
-    
-  
+
+
     this.handleAfricaSelection = this.handleAfricaSelection.bind(this)
     this.handleAsiaSelection = this.handleAsiaSelection.bind(this)
     this.handleEuropeSelection = this.handleEuropeSelection.bind(this)
@@ -498,7 +498,7 @@ class Map extends Component {
     this.handleMarkerSelection = this.handleMarkerSelection.bind(this)
     this.handleReset = this.handleReset.bind(this)
 
-  
+
 }
 
 
@@ -630,7 +630,7 @@ handleReset() {
         <div>
                 <div className="dropdown">
                     <button className="dropbtn">Africa</button>
-                    <div className="dropdown-content">        
+                    <div className="dropdown-content">
           {
             this.state.citiesAfrica.map((city, i) => (
 
@@ -642,7 +642,7 @@ handleReset() {
             </div>
             <div className="dropdown">
                 <button className="dropbtn">Asia</button>
-                <div className="dropdown-content">        
+                <div className="dropdown-content">
       {
         this.state.citiesAsia.map((city, i) => (
 
@@ -654,7 +654,7 @@ handleReset() {
             </div>
             <div className="dropdown">
                 <button className="dropbtn">Europe</button>
-                <div className="dropdown-content">        
+                <div className="dropdown-content">
       {
         this.state.citiesEurope.map((city, i) => (
 
@@ -666,7 +666,7 @@ handleReset() {
             </div>
             <div className="dropdown">
                 <button className="dropbtn">North America</button>
-                <div className="dropdown-content">        
+                <div className="dropdown-content">
       {
         this.state.citiesNorthAmerica.map((city, i) => (
 
@@ -678,7 +678,7 @@ handleReset() {
             </div>
             <div className="dropdown">
                 <button className="dropbtn">South America</button>
-                <div className="dropdown-content">        
+                <div className="dropdown-content">
       {
         this.state.citiesSouthAmerica.map((city, i) => (
 
@@ -690,7 +690,7 @@ handleReset() {
             </div>
             <div className="dropdown">
                 <button className="dropbtn">Oceania</button>
-                <div className="dropdown-content">        
+                <div className="dropdown-content">
       {
         this.state.citiesOceania.map((city, i) => (
 
@@ -699,7 +699,7 @@ handleReset() {
         ))
       }
                 </div>
-            </div>            
+            </div>
         </div>
         </div>
         <div style={wrapperStyles}>
@@ -745,7 +745,7 @@ handleReset() {
                       },
                     }}
                   />
-                ))} 
+                ))}
               </Geographies>
               <Markers>
                 {
@@ -758,7 +758,7 @@ handleReset() {
                         fill="#FF5722"
                         stroke="#DF3702"
                       />
-                    <text 
+                    <text
                     className="text"
                     textAnchor="middle"
                     y={0}
@@ -841,11 +841,11 @@ handleReset() {
                     }}
 
                   />
-                ))} 
+                ))}
               </Geographies>
               <Markers>
                 {
-          
+
                  this.state.cities.map((city, i) => (
                     <Marker key={i} name={city.name} onClick={this.handleMarkerSelection} data-city={i} marker={city}>
 
@@ -856,7 +856,7 @@ handleReset() {
                         fill="#FF5722"
                         stroke="#DF3702"
                       />
-                      <text 
+                      <text
                     className="text"
                     textAnchor="middle"
                     y={0}
@@ -873,19 +873,19 @@ handleReset() {
               <Markers>
                 {
                      <Marker data-city={this.state.city.name} marker={this.state.city}>
-                    
+
                       <circle
                         cx={0}
                         cy={0}
                         r={10}
                         fill="green"
-                      /> 
+                      />
                     </Marker>
                   }
               </Markers>
-                
+
             </ZoomableGroup>
-          
+
           </ComposableMap>
         </div>
         </div>
