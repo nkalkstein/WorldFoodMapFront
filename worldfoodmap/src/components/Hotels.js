@@ -6,38 +6,13 @@ import MainPage from './MainPage';
 
 // Use hotel metasearch site api.  Display real time results on video page?
 
-//Hotels.com API key - Render 10 hotels at a time. 
+//Hotels.com API key - Render 10 hotels at a time.
 
 
 class Hotels extends Component{
 
 	state = {
-		videos: [],
-		selectedVideo: null,
-		favorites: []
 	}
-
-
-
-
-onVideoSelect = selectedVideo => this.setState({selectedVideo})
-
-
-
-componentDidMount() {
-	const cityName = this.props.city.name
-    const countryName = this.props.city.country
-	 const API_KEY = '';
-
-
-
-     searchHotels({key: API_KEY, term: `${cityName} ${countryName}`, maxResults: 6}, (hotels) => {
-            this.setState({
-            	hotels: hotels
-            })
-          })
-       }
-
 
 
 
