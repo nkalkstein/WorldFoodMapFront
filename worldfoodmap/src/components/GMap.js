@@ -3,9 +3,9 @@ import '../App.css';
 import GoogleMapReact from 'google-map-react';
 
 
- 
 
- 
+
+
 class GMap extends Component {
 
   state = {
@@ -22,7 +22,7 @@ class GMap extends Component {
   };
 
 
-// Include locations on this map?  Or make a second google map?
+// Include locations on this map?  Or make a second google map? Restaurants? Hotels?
 
 render() {
   console.log(this.props.city )
@@ -40,7 +40,7 @@ render() {
         </GoogleMapReact>
       </div>
       </div>
-      
+
     );
   } else {
     return null
@@ -50,7 +50,5 @@ render() {
 
 
 }
- 
+
 export default GMap;
-
-
