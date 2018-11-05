@@ -12,11 +12,11 @@ export default class UserLogin extends Component {
   //  })
   //}
 
-  handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value
-    })
-  }
+  // handleChange(event) {
+  //   this.setState({
+  //     [event.target.name]: event.target.value
+  //   })
+  // }
 
 //username
 
@@ -24,6 +24,15 @@ export default class UserLogin extends Component {
     event.preventDefault()
     this.props.onSubmit(this.state.name, this.state.password)
   }
+
+
+  handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
+
 
   render() {
     return (
