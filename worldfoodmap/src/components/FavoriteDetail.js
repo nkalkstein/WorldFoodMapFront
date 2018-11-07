@@ -32,5 +32,10 @@ const FavoriteDetail = ({userName, addToFavorites, viewFavorites, video, goBack}
 		)
 
 }
+}
+
+
+
+
 
 export default FavoriteDetail;
