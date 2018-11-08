@@ -329,4 +329,28 @@ class NewSearchBar extends React.Component {
   }
 }
 
+//   render() {
+//     const { value, suggestions } = this.state;
+//     const inputProps = {
+//       placeholder: "Enter a City Name",
+//       value,
+//       onChange: this.onChange
+//     };
+
+//     return (
+
+//       <Autosuggest
+//         suggestions={suggestions}
+//         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+//         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+//         getSuggestionValue={this.getSuggestionValue}
+//         renderSuggestion={this.renderSuggestion}
+//         onSuggestionSelected={this.onSuggestionSelected}
+//         inputProps={inputProps}
+//       />
+
+//     );
+//   }
+// }
+
 export default NewSearchBar
