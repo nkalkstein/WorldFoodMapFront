@@ -12,7 +12,7 @@ As a food and travel lover who is not able to go on nearly as many trips as I'd 
 
 In order to learn about a place, however, you have to know that it exists.  With the World Food Map you can learn about far away places whose names you've never heard of, but where you can explore nonetheless.
 
-I had long thought about how fun and useful a map-based food video application would be.  When I couldnt find anyting like it,  I decided to make it myself.
+I had long thought about how fun and useful a map-based food video application would be.  When I couldn\ not find anything like it, I decided to make it myself!
 
 # Screenshots
 
