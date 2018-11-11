@@ -10,9 +10,9 @@ Create personalized favorites list with videos you liked from various cities aro
 
 As a food and travel lover who is not able to go on nearly as many trips as I'd like, YouTube offers a huge selection of high quality food and travel videos.  
 
-In order to learn about a place, however, you have to know that it exists.  With the World Food Map you can learn about far away places whose names you've never heard of, but where you can explore nonetheless. 
+In order to learn about a place, however, you have to know that it exists.  With the World Food Map you can learn about far away places whose names you've never heard of, but where you can explore nonetheless.
 
-This app is something that I would use if someone else made it, so I decided to make it myself.
+I had long thought about how fun and useful a map-based food video application would be.  When I couldnt find anyting like it,  I decided to make it myself.
 
 # Screenshots
 
