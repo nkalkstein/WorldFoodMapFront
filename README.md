@@ -4,7 +4,7 @@ A map-based application for food, cooking and travel lovers, where users can exp
 
 Use an interactive world map or browse by continent to choose a city and view amazing food and cooking videos from that chosen location.
 
-Learn about the cuisines of the world, from the national, to the regional, to the local, and everywhere in between, the varieties and
+Learn about the cuisines of the world, from national dishes, regional specialties, local hidden gems, and everywhere in between.
 
 Create personalized favorites list with videos you liked from cities around the world.
 
