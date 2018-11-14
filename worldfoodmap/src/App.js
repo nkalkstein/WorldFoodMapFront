@@ -12,16 +12,16 @@ state = {
     }
 
 
-  // login = (name, password) => {
-  //   fetch('http://localhost:3000/users', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json'
-  //     },
-  //     body: JSON.stringify({ name, password })
-  //   })
- 
+  login = (name, password) => {
+    fetch('http://localhost:3000/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({ name, password })
+    })
+
 
 
 
@@ -58,7 +58,7 @@ state = {
         <MainPage user={this.state.user} register={this.register}/>
         <GMapTwo />
       </div>
-      
+
       </div>
 
 
@@ -73,7 +73,7 @@ state = {
       <div>
         <MainPage user={this.state.user} register={this.register}/>
       </div>
-  
+
       </div>
       )
 
