@@ -6,19 +6,19 @@ export default class UserLogin extends Component {
     password: ''
   }
 
-//  handleChange(event) {
-  //  this.setState({
-  //    [event.target.name]: event.target.value
-  //  })
-  //}
+ handleChange(event) {
+   this.setState({
+     [event.target.name]: event.target.value
+   })
+  }
 
-  // handleChange(event) {
-  //   this.setState({
-  //     [event.target.name]: event.target.value
-  //   })
-  // }
+  handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
 
-//username
+username
 
   handleSubmit(event) {
     event.preventDefault()
