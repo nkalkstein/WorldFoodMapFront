@@ -179,15 +179,15 @@ goBack = (event) => {
 
           )
 
-          <div>
-                 <FavoriteDetail userName={this.state.name} video={this.state.selectedFavorite} goBack={this.goBack} />
-                   <ul className="col-md-4 list-group">
-                      {theFavs.map((video) => <Favorite userName={this.state.name} onFavoriteSelect={this.onFavoriteSelect} goBack={this.goBack} key={video.etag} video={video}/>)}
-                  </ul>
-              </div>
-
-
-                  )
+          // <div>
+          //        <FavoriteDetail userName={this.state.name} video={this.state.selectedFavorite} goBack={this.goBack} />
+          //          <ul className="col-md-4 list-group">
+          //             {theFavs.map((video) => <Favorite userName={this.state.name} onFavoriteSelect={this.onFavoriteSelect} goBack={this.goBack} key={video.etag} video={video}/>)}
+          //         </ul>
+          //     </div>
+          //
+          //
+          //         )
 
       }
 
