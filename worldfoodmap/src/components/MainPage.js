@@ -7,7 +7,7 @@ import Favorite from './Favorite'
 import FavoriteDetail from './FavoriteDetail'
 
 export default class MainPage extends Component {
-  
+
 
   state = {
     videos:[],
@@ -60,7 +60,7 @@ renderVideos = (city, country) => {
 
 renderWiki = (city, country) => {
   fetch("https://en.wikipedia.org/w/api.php?&origin=*&action=opensearch&search=" + city +"&limit=1")
-      .then(x => x.json()) 
+      .then(x => x.json())
       .then((results) => {
         this.setState({
           cityStats: results
@@ -146,14 +146,14 @@ goBack = (event) => {
       </h2>
     )
   } else {
-      if (this.state.favoritesView === false){ 
+      if (this.state.favoritesView === false){
 
     const theVideos = this.state.videos.slice(1)
 
     return(
       <div>
       <Map  cityStats={this.state.cityStats} renderWiki={this.renderWiki} renderVideos={this.renderVideos} removeVideos={this.removeVideos} user={this.state.name} setCity={this.setCity} resetCity={this.resetCity}/>
-      
+
       <div>
       <VideoDetail favoritesPressed={this.state.favoritesPressed} addToFavorites={this.addToFavorites} video={this.state.selectedVideo} viewFavorites={this.viewFavorites} />
       <ul className="col-md-4 list-group">
@@ -175,17 +175,27 @@ goBack = (event) => {
               {theFavs.map((video) => <Favorite userName={this.state.name} onFavoriteSelect={this.onFavoriteSelect} goBack={this.goBack} key={video.etag} video={video}/>)}
           </ul>
       </div>
-    
+
 
           )
 
+          // <div>
+          //        <FavoriteDetail userName={this.state.name} video={this.state.selectedFavorite} goBack={this.goBack} />
+          //          <ul className="col-md-4 list-group">
+          //             {theFavs.map((video) => <Favorite userName={this.state.name} onFavoriteSelect={this.onFavoriteSelect} goBack={this.goBack} key={video.etag} video={video}/>)}
+          //         </ul>
+          //     </div>
+          //
+          //
+          //         )
+
       }
 
-      
+
   }
-     
-  
+
+
   }
-  
-  
+
+
 }
