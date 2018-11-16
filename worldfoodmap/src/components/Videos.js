@@ -55,8 +55,38 @@ render() {
      return null
    }
   }
-     
-	
+
+
 }
 
 export default Videos;
+
+
+//
+// render() {
+// 	   if (this.state.videos.length){
+// 	   	const theVideos = this.state.videos.slice(1)
+// 			return(
+//
+// 			<div>
+// 			<VideoDetail video={selectedVideo}
+// 			<div className="row">
+
+
+
+// 	        </div>
+// 	        </div>
+//       )
+//
+//
+//
+//
+//        } else {
+//      return null
+//    }
+//   }
+//
+//
+// }
+//
+// export default Videos;

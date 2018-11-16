@@ -24,22 +24,22 @@ state = {
 
 
 
-
-
-  register = (name, password) => {
-    fetch('http://localhost:3000/users', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({name, password})
-    }).then (res => res.json()).then(res => {
-      this.setState({
-        user: res
-      })
-    })
-}
+  //
+  //
+  // register = (name, password) => {
+//     fetch('http://localhost:3000/users', {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json',
+//         'Accept': 'application/json'
+//       },
+//       body: JSON.stringify({name, password})
+//     }).then (res => res.json()).then(res => {
+//       this.setState({
+//         user: res
+//       })
+//     })
+// }
 
 
 
