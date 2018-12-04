@@ -69,7 +69,27 @@ renderWiki = (city, country) => {
   }
 
 renderFlights = (city, country) => {
-  fetch("https://en.wikipedia.org/w/api.php?&origin=*&action=opensearch&search=" + city +"&limit=1")
+
+  response = Unirest.post "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/v1.0",
+  headers:{
+    "X-RapidAPI-Key" => "95321324bdmsh0b5885dbbfde2adp1330c3jsn556c680b8a27",
+    "Content-Type" => "application/x-www-form-urlencoded"
+  },
+  parameters:{
+    "inboundDate" => "2019-01-10",
+    "cabinClass" => "business",
+    "children" => 0,
+    "infants" => 0,
+    "groupPricing" => "false",
+    "country" => "US",
+    "currency" => "USD",
+    "locale" => "en-US",
+    "originPlace" => "SFO-sky",
+    "destinationPlace" => "LHR-sky",
+    "outboundDate" => "2019-01-01",
+    "adults" => 1
+  }
+
       .then(x => x.json())
       .then((results) => {
         this.setState({
