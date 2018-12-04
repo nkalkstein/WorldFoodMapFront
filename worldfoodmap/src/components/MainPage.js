@@ -68,6 +68,16 @@ renderWiki = (city, country) => {
       })
   }
 
+renderFlights = (city, country) => {
+  fetch("https://en.wikipedia.org/w/api.php?&origin=*&action=opensearch&search=" + city +"&limit=1")
+      .then(x => x.json())
+      .then((results) => {
+        this.setState({
+          cityStats: results
+        })
+      })
+  }
+
 addToFavorites = (event, video) => {
   console.log(event.target)
     this.setState({
