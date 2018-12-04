@@ -72,7 +72,7 @@ renderFlights = (city, country) => {
 
   response = Unirest.post "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/v1.0",
   headers:{
-    "X-RapidAPI-Key" => "95321324bdmsh0b5885dbbfde2adp1330c3jsn556c680b8a27",
+    "X-RapidAPI-Key" => "",
     "Content-Type" => "application/x-www-form-urlencoded"
   },
   parameters:{
