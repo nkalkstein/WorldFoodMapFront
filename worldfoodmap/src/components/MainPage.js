@@ -104,7 +104,6 @@ chooseFlight = (event, flight) => {
         flight: [...this.state.flight, flight],
 
       })
-      alert("This has been added to your favorites!");
   }
 
 
