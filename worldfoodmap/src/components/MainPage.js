@@ -98,6 +98,16 @@ renderFlights = (city, country) => {
       })
   }
 
+chooseFlight = (event, flight) => {
+    console.log(event.target)
+      this.setState({
+        flight: [...this.state.flight, flight],
+
+      })
+      alert("This has been added to your favorites!");
+  }
+
+
 addToFavorites = (event, video) => {
   console.log(event.target)
     this.setState({
