@@ -104,6 +104,7 @@ chooseFlight = (event, flight) => {
         flight: [...this.state.flight, flight],
 
       })
+      alert("You have chosen a flight to [city]")
   }
 
 
