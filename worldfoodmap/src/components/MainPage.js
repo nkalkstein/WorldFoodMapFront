@@ -107,6 +107,15 @@ chooseFlight = (event, flight) => {
       alert("You have chosen a flight to [city]")
   }
 
+// chooseFlight = (event, flight) => {
+//       console.log(event.target)
+//         this.setState({
+//           flight: [...this.state.flight, flight],
+//
+//         })
+//         alert("You have chosen a flight")
+//     }
+
 
 addToFavorites = (event, video) => {
   console.log(event.target)
