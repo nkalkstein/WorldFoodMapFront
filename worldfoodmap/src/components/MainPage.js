@@ -125,14 +125,14 @@ chooseBackupFlight = (event, flight) => {
 //         alert("You have chosen a backup flight")
 //     }
 
-// chooseDefaultFlight = (event, defaultFlight) => {
-//       console.log(event.target)
-//           this.setState({
-//             flight: [...this.state.flight, defaultFlight],
-//
-//         })
-//         alert("You have chosen a backup flight")
-//     }
+chooseDefaultFlight = (event, defaultFlight) => {
+      console.log(event.target)
+          this.setState({
+            flight: [...this.state.flight, defaultFlight],
+
+        })
+        alert("You have chosen a backup flight")
+    }
 
 
 addToFavorites = (event, video) => {
