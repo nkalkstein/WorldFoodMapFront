@@ -14,10 +14,10 @@ const FavoriteDetail = ({userName, addToFavorites, viewFavorites, video, goBack}
 
 	return (
 		<div>
-		<h2 style={{color: "white"}}> {userName}'s Favorite Videos </h2>
+		<h2 style={{color: "white"}}> "{userName}'s Favorite Videos" </h2>
 		<button className="goBack" onClick={goBack}> GO BACK </button>
 		<div className="video-detail col-md-8">
-			
+
 			<div className="embed-responsive embed-responsive-16by9">
 				<iframe width="600" height="350" className="embed-responsive-item" title="i" src={url}></iframe>
 			</div>
@@ -32,7 +32,7 @@ const FavoriteDetail = ({userName, addToFavorites, viewFavorites, video, goBack}
 		)
 
 }
-}
+
 
 
 

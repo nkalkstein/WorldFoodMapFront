@@ -22,25 +22,52 @@ state = {
       body: JSON.stringify({ name, password })
     })
 
+}
 
 
-  //
-  //
-  // register = (name, password) => {
-//     fetch('http://localhost:3000/users', {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//         'Accept': 'application/json'
-//       },
-//       body: JSON.stringify({name, password})
-//     }).then (res => res.json()).then(res => {
-//       this.setState({
-//         user: res
-//       })
-//     })
+
+  register = (name) => {
+    fetch('http://localhost:3000/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({name})
+    }).then (res => res.json()).then(res => {
+      this.setState({
+        user: res
+      })
+    })
+}
+
+
+// saveFavorites = (name, favorites => {
+//   fetch('http://localhost:3000/videos', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//       'Accept': 'application/json'
+//     },
+//     body: JSON.stringify({name, favorites})
+//   })
 // }
-
+//
+// fetchFavorites = (name, favorites) => {
+//   fetch('http://localhost:3000/videos', {
+//     method: 'GET',
+//     headers: {
+//       'Content-Type': 'application/json',
+//       'Accept': 'application/json'
+//     },
+//     body: JSON.stringify({name, favorites})
+//   }).then (res => res.json()).then(res => {
+//     this.setState({
+//       name: name
+//       favorites: res
+//     })
+//   })
+// }
 
 
 

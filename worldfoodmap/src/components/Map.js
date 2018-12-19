@@ -220,7 +220,7 @@ class Map extends Component {
         { name: "New York City", country:"USA", coordinates: [-73.56, 40.40] },
         { name: "Oklahoma City", country:"USA", coordinates: [-97.32, 35.29] },
         { name: "Panama City", country:"Panama", coordinates: [-79.31, 8.59] },
-        { name: "Philadelphia", country:"USA", coordinates: [-75.10, 30.57] },
+        { name: "Philadelphia", country:"USA", coordinates: [-75.10, 39.57] },
         { name: "Phoenix", country:"USA", coordinates: [-112.04, 33.27] },
         { name: "Pittsburgh", country:"USA", coordinates: [-80.00, 40.27] },
         { name: "Portland", country:"USA", coordinates: [-122.41, 45.31] },
@@ -793,7 +793,7 @@ handleReset() {
           </button>
         </a>
         <h1 style={{color: "white"}}> {this.state.city.name}, {this.state.city.country}</h1>
-        <h3 style={{textAlign:"center"}}> <a href= {stats} target="_blank" style={{color: "white"}}>  Wikipedia </a></h3>
+        <h3 style={{textAlign:"center"}}> <a href= {stats} target="_blank" style={{color: "white"}}>  Learn More about this City! : Wikipedia </a></h3>
         <br></br>
         <div >
         <div style= {{margin: "0 auto"}}>

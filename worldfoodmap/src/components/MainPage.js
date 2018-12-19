@@ -68,53 +68,53 @@ renderWiki = (city, country) => {
       })
   }
 
-renderFlights = (city, country) => {
+// renderFlights = (city, country) => {
+//
+//   response = Unirest.post "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/v1.0",
+//   headers:{
+//     "X-RapidAPI-Key" => "",
+//     "Content-Type" => "application/x-www-form-urlencoded"
+//   },
+//   parameters:{
+//     "inboundDate" => "2019-01-10",
+//     "cabinClass" => "business",
+//     "children" => 0,
+//     "infants" => 0,
+//     "groupPricing" => "false",
+//     "country" => "US",
+//     "currency" => "USD",
+//     "locale" => "en-US",
+//     "originPlace" => "SFO-sky",
+//     "destinationPlace" => "LHR-sky",
+//     "outboundDate" => "2019-01-01",
+//     "adults" => 1
+//   }
+//
+//       .then(x => x.json())
+//       .then((results) => {
+//         this.setState({
+//           cityStats: results
+//         })
+//       })
+//   }
 
-  response = Unirest.post "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/v1.0",
-  headers:{
-    "X-RapidAPI-Key" => "",
-    "Content-Type" => "application/x-www-form-urlencoded"
-  },
-  parameters:{
-    "inboundDate" => "2019-01-10",
-    "cabinClass" => "business",
-    "children" => 0,
-    "infants" => 0,
-    "groupPricing" => "false",
-    "country" => "US",
-    "currency" => "USD",
-    "locale" => "en-US",
-    "originPlace" => "SFO-sky",
-    "destinationPlace" => "LHR-sky",
-    "outboundDate" => "2019-01-01",
-    "adults" => 1
-  }
+// chooseFlight = (event, flight) => {
+//     console.log(event.target)
+//       this.setState({
+//         flight: [...this.state.flight, flight],
+//
+//       })
+//       alert("You have chosen a flight to [city]")
+//   }
 
-      .then(x => x.json())
-      .then((results) => {
-        this.setState({
-          cityStats: results
-        })
-      })
-  }
-
-chooseFlight = (event, flight) => {
-    console.log(event.target)
-      this.setState({
-        flight: [...this.state.flight, flight],
-
-      })
-      alert("You have chosen a flight to [city]")
-  }
-
-chooseBackupFlight = (event, flight) => {
-      console.log(event.target)
-        this.setState({
-          backupFlight: [...this.state.flight, flight],
-
-        })
-        alert("You have chosen a backup flight")
-    }
+// chooseBackupFlight = (event, flight) => {
+//       console.log(event.target)
+//         this.setState({
+//           backupFlight: [...this.state.flight, flight],
+//
+//         })
+//         alert("You have chosen a backup flight")
+//     }
 
 // chooseBackupFlight = (event, backupFlight) => {
 //       console.log(event.target)
@@ -125,14 +125,14 @@ chooseBackupFlight = (event, flight) => {
 //         alert("You have chosen a backup flight")
 //     }
 
-chooseDefaultFlight = (event, defaultFlight) => {
-      console.log(event.target)
-          this.setState({
-            flight: [...this.state.flight, defaultFlight],
-
-        })
-        alert("You have chosen a backup flight")
-    }
+// chooseDefaultFlight = (event, defaultFlight) => {
+//       console.log(event.target)
+//           this.setState({
+//             flight: [...this.state.flight, defaultFlight],
+//
+//         })
+//         alert("You have chosen a backup flight")
+//     }
 
 
 addToFavorites = (event, video) => {
@@ -189,7 +189,10 @@ goBack = (event) => {
     if (!this.props.user) {
     return (
       <h2 className="Login">
-        Create an Account or Log In
+        Enter your Name:
+        <br></br>
+
+        <br></br>
       <form onSubmit={(event) => this.handleSubmit(event)}>
         <input
           type='text'
@@ -198,14 +201,9 @@ goBack = (event) => {
           placeholder='Name'
           onChange={(event) => this.handleChange(event)}
         />
+
         <br></br>
-        <input
-          type='password'
-          name='password'
-          value={this.state.password}
-          placeholder='Password'
-          onChange={(event) => this.handleChange(event)}
-        />
+
          <br></br>
 
         <input type='submit' />
