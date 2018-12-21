@@ -136,6 +136,16 @@ button:hover {
   color: white;
   margin: 0;
 
+}
+
+.App-header {
+  height: 40px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 100px;
+  color: white;
+  margin: 0;
+
 } */
 
 /* .Login{
