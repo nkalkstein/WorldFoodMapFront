@@ -72,6 +72,17 @@ button:hover {
  font-family: 'Inconsolata', monospace;
 }
 
+/* .Appy {
+  text-align: right;
+  color:white;
+  background: url("./static/food-background-2763.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ font-family: 'Arial';
+} */
+
 
 .AppOne{
   background: url("./static/food-background-2763.jpg") no-repeat center center fixed;
