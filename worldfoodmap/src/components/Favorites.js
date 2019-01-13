@@ -18,7 +18,7 @@ return (
 
 		// 			<div>
 		//
-		// <ul className="favorite">
+		// <ul className="favorites">
 		// 				{Favorites.map((video) => <VideoDetail video={video.etag} key={video.etag} favorite={favorite}/>)}
 		// 		</ul>
 		// 		</div>
