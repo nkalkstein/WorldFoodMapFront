@@ -18,7 +18,7 @@ return (
 
 		// 			<div>
 		//
-		// <ul className="col-md-4 list-group">
+		// <ul className="favorite">
 		// 				{Favorites.map((video) => <VideoDetail video={video.etag} key={video.etag} favorite={favorite}/>)}
 		// 		</ul>
 		// 		</div>
