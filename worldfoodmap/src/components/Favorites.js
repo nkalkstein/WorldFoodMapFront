@@ -23,6 +23,13 @@ return (
 		// 		</ul>
 		// 		</div>
 
+		// 			<div>
+		//
+		// <ul className="col-md-4 list-group">
+		// 				{Videos.map((video) => <VideoDetail video={video} key={video.etag} favorite={favorite.etag}/>)}
+		// 		</ul>
+		// 		</div>
+
 	   )
 }
 
