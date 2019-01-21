@@ -9,8 +9,9 @@ class Flight extends Component{
 
 	state = {
 
-		chosenflight= chosenflight
-		flights= flights
+		chosenflight = chosenflight
+		flights = flights
+		myflight = myflight
 
 	}
 
