@@ -9,6 +9,8 @@ class Flight extends Component{
 
 	state = {
 
+		chosenflight= chosenflight
+
 	}
 
 // 	const videoId= video.id.videoId;
