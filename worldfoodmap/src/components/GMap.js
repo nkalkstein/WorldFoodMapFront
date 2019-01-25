@@ -3,7 +3,12 @@ import '../App.css';
 import GoogleMapReact from 'google-map-react';
 
 
-
+// class GMap extends Component {
+//
+//   state = {
+//     chosenLocation: ''
+//     availablelocation: ''
+//   }
 
 
 class GMap extends Component {
