@@ -22,6 +22,7 @@ class GMapTwo extends Component {
   };
 
 //Include "places" restaurants on second google map.   Include hotel locations?
+//Show flight patterns? 
 
 
 render() {
