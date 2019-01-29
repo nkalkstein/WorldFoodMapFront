@@ -3,6 +3,7 @@ import Autosuggest from 'react-autosuggest';
 
 // autosuggest new place? add to map?
 // Go straight to flights? Hotels? from search bar?
+// Standardize list more?  Allo for sort options?
 // Imagine you have a list of languages that you'd like to autosuggest.
 const cities = [
         { name: "Amsterdam", country:"Holland", coordinates: [4.54, 52.22] },
