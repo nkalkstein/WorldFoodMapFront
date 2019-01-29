@@ -2,6 +2,7 @@ import React from "react"
 import Autosuggest from 'react-autosuggest';
 
 // autosuggest new place? add to map?
+// Go straight to flights? Hotels? from search bar?
 // Imagine you have a list of languages that you'd like to autosuggest.
 const cities = [
         { name: "Amsterdam", country:"Holland", coordinates: [4.54, 52.22] },
