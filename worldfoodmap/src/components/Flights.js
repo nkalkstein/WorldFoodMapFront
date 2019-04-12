@@ -15,6 +15,14 @@ class Flight extends Component{
 
 	}
 
+	// state = {
+	// 
+	// 	chosenflight = chosenflight
+	// 	flights = flights
+	// 	myflight = myflight
+	//
+	// }
+
 // 	const videoId= video.id.videoId;
 // 	const url = `https://www.youtube.com/embed/${videoId}`;
 
