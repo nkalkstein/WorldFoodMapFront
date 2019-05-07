@@ -46,6 +46,7 @@ removeVideos = () => {
 renderVideos = (city, country) => {
    const API_KEY = '';
 
+
 AIzaSyA-ojt-goMyfKA9QVd4TPmtYnGSzS3m7Es
 
      searchYouTube({key: API_KEY, term: `${city} ${country} food`, maxResults: 9}, (videos) => {
