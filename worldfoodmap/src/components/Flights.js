@@ -4,6 +4,7 @@ import MainPage from './MainPage';
 
 
 //Flights- Show how many flights at a time?  Real time updating?  Note about this (not updating)?
+//FlightTracker, Expedia, CheapoAir
 
 class Flight extends Component{
 
@@ -16,7 +17,7 @@ class Flight extends Component{
 	}
 
 	// state = {
-	// 
+	//
 	// 	chosenflight = chosenflight
 	// 	flights = flights
 	// 	myflight = myflight
