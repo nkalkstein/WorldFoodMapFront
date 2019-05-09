@@ -5,6 +5,7 @@ import MainPage from './MainPage';
 
 //Flights- Show how many flights at a time?  Real time updating?  Note about this (not updating)?
 //FlightTracker, Expedia, CheapoAir
+//Buy or just look up?
 
 class Flight extends Component{
 
