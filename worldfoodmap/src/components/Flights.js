@@ -7,6 +7,7 @@ import MainPage from './MainPage';
 //FlightTracker, Expedia, CheapoAir
 //Buy or just look up?
 //Flight Lookup, flight Aware
+//Flightstats , flightlookup
 
 class Flight extends Component{
 
