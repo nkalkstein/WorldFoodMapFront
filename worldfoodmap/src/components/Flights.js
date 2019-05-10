@@ -8,6 +8,7 @@ import MainPage from './MainPage';
 //Buy or just look up?
 //Flight Lookup, flight Aware
 //Flightstats , flightlookup
+//Seat availability?
 
 class Flight extends Component{
 
