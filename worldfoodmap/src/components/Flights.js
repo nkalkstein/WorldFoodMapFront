@@ -8,6 +8,7 @@ import MainPage from './MainPage';
 //Buy or just look up?
 //Flight Lookup, flight Aware, flightstats, FlightTracker
 //Prices? Actual flights?  Average price?
+//Choose flight for stats. myflight for purchased ticket.
 
 class Flight extends Component{
 
