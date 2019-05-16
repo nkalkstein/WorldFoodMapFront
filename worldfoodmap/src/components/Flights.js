@@ -8,7 +8,7 @@ import MainPage from './MainPage';
 //Buy or just look up?
 //Flight Lookup, flight Aware
 //Flightstats , flightlookup
-//Prices?
+//Prices? Actual flights?  Average price?
 
 class Flight extends Component{
 
